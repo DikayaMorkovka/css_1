@@ -10,7 +10,7 @@ h1 {
     color: blue;
 }
 
-.green {
+section div div .green {
     color: green;
 }
 
@@ -18,7 +18,7 @@ h1 {
     color: blue;
 }
 
-.box div {
+section div>.box div {
     background-color: green;
 }
 
@@ -26,7 +26,7 @@ h1 {
     background-color: red;
 }
 
-.green {
+section div>section.green {
     background-color: green;
     color: white;
 }
@@ -44,27 +44,27 @@ ul>li {
     color: white;
 }
 
-.solo,
+.salo,
 #bread {
     background-color: yellow;
 }
 
 /* --------------------------------- */
 
-ul:first-child {
+.first-task li:first-child {
     color: white;
 }
 
-.second-task:first-child:first-child {
+.second-task ul:first-child li:first-child {
     color: yellow;
 }
 
-.third-task:last-child:first-child {
+.third-task ul:last-child li:first-child {
     color: yellow;
 }
 
-.four-task ul:last-child {
-    color: white;
+.four-task li:last-child {
+    background-color: yellow;
 }
 
 .five-task ul:last-of-type :last-child {
@@ -101,11 +101,11 @@ ul:first-child {
     background-color: red;
 }
 
-.lesson-three-task-four [class='primary'] {
+.lesson-three-task-four [class~='primary'] {
     background-color: blue;
 }
 
-.lesson-three-task-five button [class|='secondary'] {
+.lesson-three-task-five [class|='secondary'] {
     background-color: red;
 }
 
@@ -123,12 +123,11 @@ ul:first-child {
     background-color: red;
 }
 
-.lesson-three-task-nine h2::first-letter,
-h1::first-letter {
+.lesson-three-task-nine ::first-letter {
     color: red;
 }
 
-.lesson-three-task-ten p::first-line {
+.lesson-three-task-ten p:first-of-type:first-line {
     background-color: yellow;
 }
 
