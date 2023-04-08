@@ -7,10 +7,10 @@
 }
 
 h1 {
-    color: blue;
+    background-color: blue;
 }
 
-section div div .green {
+div>p.green {
     color: green;
 }
 
@@ -18,7 +18,7 @@ section div div .green {
     color: blue;
 }
 
-section div>.box div {
+.box div {
     background-color: green;
 }
 
@@ -26,7 +26,7 @@ section div>.box div {
     background-color: red;
 }
 
-section div>section.green {
+div>section.green {
     background-color: green;
     color: white;
 }
@@ -71,7 +71,7 @@ ul>li {
     color: white;
 }
 
-.only-child-task :only-child {
+.only-child-task div:only-child {
     color: red
 }
 
@@ -89,37 +89,37 @@ ul>li {
 
 /* ---------------------------------------------- */
 
-.lesson-three-task-one [href] {
+.lesson-three-task-one nav a[href] {
     color: white;
 }
 
-.lesson-three-task-two [value] {
+.lesson-three-task-two li[value] {
     color: yellow
 }
 
-.lesson-three-task-three [value='3'] {
+.lesson-three-task-three li[value='3'] {
     background-color: red;
 }
 
-.lesson-three-task-four [class~='primary'] {
+.lesson-three-task-four button[class~='primary'] {
     background-color: blue;
 }
 
-.lesson-three-task-five [class|='secondary'] {
+.lesson-three-task-five button[class|='secondary'] {
     background-color: red;
 }
 
-.lesson-three-task-six [class^='b'] {
+.lesson-three-task-six ul li[class^='b'] {
     background-color: white;
     color: green;
 }
 
-.lesson-three-task-seven [class*='on'] {
+.lesson-three-task-seven ul li[class*='on'] {
     background-color: white;
     color: green;
 }
 
-.lesson-three-task-eight [class$='s'] {
+.lesson-three-task-eight ul li span[class$='s'] {
     background-color: red;
 }
 
@@ -127,7 +127,7 @@ ul>li {
     color: red;
 }
 
-.lesson-three-task-ten p:first-of-type:first-line {
+.lesson-three-task-ten::first-line {
     background-color: yellow;
 }
 
