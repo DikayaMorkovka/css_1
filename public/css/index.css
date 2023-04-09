@@ -60,7 +60,7 @@ ul>li {
 }
 
 .third-task ul:last-child li:first-child {
-    color: yellow;
+    background-color: yellow;
 }
 
 .four-task li:last-child {
